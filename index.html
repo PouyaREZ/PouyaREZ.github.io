@@ -17,6 +17,26 @@
         .invert {  
             filter: invert(100%);  
         }   
+        
+        .white-text {color: white;}
+        .flex {
+            display: flex;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+        .fs-small {
+            font-size: 3rem; /* Adjust the size as needed */
+        }
     </style>  
 </head>
 
@@ -32,9 +52,9 @@
             </a>
         </div>
         <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">  
-            <a href="#home" class="button bg-white black fw-600 no-underline mx-2">Home</a>  
-            <a href="#about-us" class="button bg-white black fw-600 no-underline mx-2">About Us</a>  
-            <a href="mailto:info@fntf.capital" class="button bg-white black fw-600 no-underline mx-2">Contact Us</a>            <a href="#" class="button bg-white black fw-600 no-underline mx-2">Register</a>  
+            <a href="#home" class="white-text fw-600 no-underline mx-2">Home</a>  
+            <a href="#about-us" class="white-text fw-600 no-underline mx-2">About Us</a>  
+            <a href="mailto:info@fntf.capital" class="white-text fw-600 no-underline mx-2">Contact Us</a>  
         </div>  
     </nav>
 
@@ -120,15 +140,13 @@
     </section> -->
 
     <!-- big text -->
-    <section class="p-10 md-py-10">
+    <section class="p-10 md-py-10" id="about-us">
         <div class="w-100pc md-w-70pc mx-auto py-10">
-            <h2 class="white fs-l2 md-fs-xl1 fw-900 lh-2">FNTF builds robust equity trading signals for diverse market conditions</h2>
+            <h2 class="white fs-small fw-900 lh-2">FNTF builds robust equity trading signals for diverse market conditions</h2>
         </div>
-        
         <!-- Mid-freq, Market Neutral, Fullt systematic, Long/Short -->
         <div class="w-100pc md-w-70pc mx-auto py-10">
-            <h2 class="white fs-m1 md-fs-xl1 fw-900 lh-1">Fully Systematic, Mid-Frequency, Market Neutral, Long/Short</h2>
-
+            <h2 class="white fs-small fw-900 lh-1">Fully Systematic, Mid-Frequency, Market Neutral, Long/Short</h2>
     </section>
 
     <!-- product options -->
@@ -392,73 +410,14 @@
 
     <!-- footer -->
     <footer class="p-5 md-p-l5 bg-indigo-lightest-10">
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap justify-center">
             <div class="mb-10">
                 <img src="assets/images/logo1.png" class="w-l5 invert" alt="">  
-                <div class="white opacity-70 fs-s2 mt-4 md-pr-10">
+                <div class="white opacity-70 fs-s2 mt-4 md-pr-10 text-center">
                     <p>&copy; 2024 FNTF. All rights reserved.</p>
                     <br>
                 </div>
             </div>
-            <!-- <div class="w-100pc md-w-50pc">
-                <div class="flex justify-around">
-                    <div class="w-33pc md-px-10 mb-10">
-                        <h5 class="white">Company</h5>
-                        <ul class="list-none mt-5 fs-s2">
-                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">About
-                                    Us</a></li>
-                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Jobs</a>
-                            </li>
-                            <li class="my-3"><a href="#"
-                                    class="white opacity-70 no-underline hover-underline">Contact</a></li>
-                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Media</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w-33pc md-px-10 mb-10">
-                        <h5 class="white">Product</h5>
-                        <ul class="list-none mt-5 fs-s2">
-                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">About
-                                    Us</a></li>
-                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Jobs</a>
-                            </li>
-                            <li class="my-3"><a href="#"
-                                    class="white opacity-70 no-underline hover-underline">Contact</a></li>
-                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Media</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w-33pc md-px-10 mb-10">
-                        <h5 class="white">Support</h5>
-                        <ul class="list-none mt-5 fs-s2">
-                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">About
-                                    Us</a></li>
-                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Jobs</a>
-                            </li>
-                            <li class="my-3"><a href="#"
-                                    class="white opacity-70 no-underline hover-underline">Contact</a></li>
-                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Media</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="w-100pc md-w-25pc">
-                <div class="flex w-75pc md-w-100pc mx-auto">
-                    <input type="text"
-                        class="input flex-grow-1 bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 br-r-0"
-                        placeholder="Email Address">
-                    <button class="button bg-indigo indigo-lightest fw-300 fs-s3 br-l-0">Start</button>
-                </div>
-                <div class="flex justify-around my-8">
-                    <a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i
-                            data-feather="twitter" class="absolute-center h-4"></i></a>
-                    <a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i
-                            data-feather="facebook" class="absolute-center h-4"></i></a>
-                    <a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i
-                            data-feather="instagram" class="absolute-center h-4"></i></a>
-                </div>
-            </div> -->
         </div>
     </footer>
         <i class="w-4" data-feather="download"></i>
