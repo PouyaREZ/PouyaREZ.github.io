@@ -4,32 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hook</title>
+    <title>FNTF</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <style>  
+        #nav-items a {  
+          width: 140px;  
+         } 
+        .invert {  
+            filter: invert(100%);  
+        }   
+    </style>  
 </head>
 
 <body class="bg-black muli">
     <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
         <div class="flex justify-between">
             <a href="#" class="flex items-center p-2 mr-4 no-underline">
-                <img class="max-h-l2 w-auto" src="assets/images/logo.png" />
+                <img class="w-l5 invert" alt="" src="assets/images/logo1.png" />
             </a>
             <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
                 class="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
                 <i data-feather="menu"></i>
             </a>
         </div>
-        <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
-            <a href="#home" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Home</a>
-            <a href="#features" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Features</a>
-            <a href="#pricing" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Pricing</a>
-            <a href="#blog" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Blog</a>
-            <a href="#" class="button bg-white black fw-600 no-underline mx-5">Register</a>
-        </div>
+        <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">  
+            <a href="#home" class="button bg-white black fw-600 no-underline mx-2">Home</a>  
+            <a href="#about-us" class="button bg-white black fw-600 no-underline mx-2">About Us</a>  
+            <a href="mailto:info@fntf.capital" class="button bg-white black fw-600 no-underline mx-2">Contact Us</a>            <a href="#" class="button bg-white black fw-600 no-underline mx-2">Register</a>  
+        </div>  
     </nav>
 
     <!-- hero section -->
@@ -388,10 +394,9 @@
     <footer class="p-5 md-p-l5 bg-indigo-lightest-10">
         <div class="flex flex-wrap">
             <div class="mb-10">
-                <img src="assets/images/logo.png" class="w-l5" alt="">
+                <img src="assets/images/logo1.png" class="w-l5 invert" alt="">  
                 <div class="white opacity-70 fs-s2 mt-4 md-pr-10">
-                    <p>Soluta voluptate et optio. Eos quasi impedit sapiente aliquid eius eligendi at. Necessitatibus
-                        magni et sed quod quas minima.</p>
+                    <p>&copy; 2024 FNTF. All rights reserved.</p>
                     <br>
                 </div>
             </div>
